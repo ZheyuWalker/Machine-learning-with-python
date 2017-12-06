@@ -61,7 +61,7 @@ def predict(X_test, W, b):
   Yhat: prediction of test input data X, a numpy array of shape (1, m)
   '''
   A = sigmoid(np.dot(W, X_test) + b)
-  Yhat = np.round(A+1) -1
+  Yhat = np.round(A+1) - 1
   
   return Yhat
 
